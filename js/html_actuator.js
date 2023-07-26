@@ -128,7 +128,7 @@ HTMLActuator.prototype.message = function (won) {
   var type = won ? "game-won" : "game-over";
   var message = won ? "You win!" : "Game over!";
   console.log(localStorage.getItem("bestScore"));
-  document.location.replace(`http://gem.kveh.ir/result/3/${Number(localStorage.getItem("bestScore"))*17-68}`)
+  // document.location.replace(`http://gem.kveh.ir/result/3/${Number(localStorage.getItem("bestScore"))*17-68}`)
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
