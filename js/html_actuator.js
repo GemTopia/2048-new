@@ -27,7 +27,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
     if (metadata.terminated) {
       if (metadata.over) {
         self.message(false); // You lose
-        document.location.replace('https://hostiran.net/domain/result?domain=gemyto.ir')
+        // document.location.replace('https://hostiran.net/domain/result?domain=gemyto.ir')
       } else if (metadata.won) {
         self.message(true); // You win!
       }

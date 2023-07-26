@@ -83,6 +83,7 @@ GameManager.prototype.actuate = function () {
 
   // Clear the state when the game is over (game over only, not win)
   if (this.over) {
+    // console.log(`http://gem.kveh.ir/result/3/${Number(this.score)*17-68}`);
     document.location.replace(`http://gem.kveh.ir/result/3/${Number(this.score)*17-68}`)
 
     // console.log(this.score)
